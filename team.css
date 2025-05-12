@@ -1,0 +1,57 @@
+body{
+    font-family: Arial;
+    margin: 0;
+    padding-left: 50px;
+    background-color: #077A7D;
+}
+
+.navbar {
+    text-align: center;
+    padding: 10px 0;
+}
+
+.navbar a{
+    display: inline-block;
+    color: black;
+    font-weight: bold;
+    text-decoration: none;
+    padding: 10px 10px;
+    margin: 0 5px;
+}
+
+.header h1{
+    font-size: 50px;
+    color: white;
+    text-align: left;
+}
+
+.header hr{
+    width: 200px;
+    border: 5px solid white;
+    margin: 0;
+    margin-top: -30px;
+    margin-bottom: 50px;
+}
+
+.member{
+    text-align: center;
+    color: white;
+}
+
+.line1{
+    display: flex;
+    gap: 12rem;
+}
+.line2{
+    display: flex;
+    gap: 12rem;
+    margin-top: 50px;
+    padding-left: 180px;
+}
+
+.team img{
+    width: 180px;
+    height: 180px;
+    border-radius: 50%;
+    border: 5px solid black;
+}
