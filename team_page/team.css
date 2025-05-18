@@ -12,7 +12,7 @@ body{
 .navbar a{
     display: inline-block;
     color: black;
-    font-weight: bold;
+    font-weight: 400;
     text-decoration: none;
     padding: 10px 10px;
     margin: 0 5px;
@@ -38,6 +38,11 @@ body{
 
 .team {
     margin-left: 30px;
+}
+
+.member img:hover {
+    transform: translateY(-8px) scale(1.03);
+    box-shadow: 0 8px 32px black;
 }
 
 .member{
@@ -71,11 +76,11 @@ footer {
     margin-top: 0;
 }
 
-    .footer-menu {
+.footer-menu {
     margin-bottom: 1rem;
 }
 
-    .footer-menu a {
+.footer-menu a {
     color: #fff;
     margin: 0 18px;
     text-decoration: none;
@@ -85,7 +90,7 @@ footer {
     transition: color 0.2s;
 }
 
-    .footer-menu a:hover {
+.footer-menu a:hover {
     color: #ffeb3b;
 }
 
