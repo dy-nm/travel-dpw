@@ -1,7 +1,6 @@
 body{
     font-family: Arial;
     margin: 0;
-    padding-left: 50px;
     background-color: #077A7D;
 }
 
@@ -19,6 +18,10 @@ body{
     margin: 0 5px;
 }
 
+.header {
+    margin-left: 30px;
+}
+
 .header h1{
     font-size: 50px;
     color: white;
@@ -31,6 +34,10 @@ body{
     margin: 0;
     margin-top: -30px;
     margin-bottom: 50px;
+}
+
+.team {
+    margin-left: 30px;
 }
 
 .member{
@@ -54,4 +61,37 @@ body{
     height: 180px;
     border-radius: 50%;
     border: 5px solid black;
+}
+
+footer {
+    background: #1ec6b6;
+    color: #fff;
+    padding: 3rem 0 2rem 0;
+    text-align: center;
+    margin-top: 0;
+}
+
+    .footer-menu {
+    margin-bottom: 1rem;
+}
+
+    .footer-menu a {
+    color: #fff;
+    margin: 0 18px;
+    text-decoration: none;
+    font-size: 1rem;
+    font-weight: 500;
+    letter-spacing: 1px;
+    transition: color 0.2s;
+}
+
+    .footer-menu a:hover {
+    color: #ffeb3b;
+}
+
+.footer-content p {
+    text-align: center;
+    margin: 0;
+    font-size: 1rem;
+    letter-spacing: 1px;
 }
