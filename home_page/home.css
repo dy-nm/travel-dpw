@@ -112,7 +112,7 @@ body {
 
 .destinasi {
   padding: 4rem 1rem 4rem 1rem;
-  background: url('image/destinasi.png') center/cover no-repeat;
+  background: url('../assest/home/destinasi.png') center/cover no-repeat;
   height: 100vh;
   text-align: center;
   position: relative;
