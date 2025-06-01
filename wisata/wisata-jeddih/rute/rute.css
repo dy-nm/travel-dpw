@@ -1,0 +1,101 @@
+body{
+    font-family: 'Segoe UI', Arial, sans-serif;
+    margin: 0;
+    background-color: #007d7d;
+}
+
+.navbar {
+    text-align: center;
+    padding: 10px 0;
+    margin-bottom: 30px;
+}
+
+.navbar a{
+    display: inline-block;
+    color: black;
+    font-weight: 400;
+    text-decoration: none;
+    padding: 10px 10px;
+    margin: 0 5px;
+}
+
+.navbar a:hover {
+    color:#1ec6b6
+}
+
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.content-header {
+    width: 500px;
+    text-align: center;
+    color: white;
+}
+
+.denah {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.denah img {
+    width: 700px;
+    height: 500px;
+    border-radius: 20px;
+}
+
+.kembali {
+    margin-top: 50px;
+    text-align: center;
+}
+
+.btn2 {
+    background-color: turquoise;
+    color: white;
+    padding: 10px 20px;
+    margin-top: 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    text-decoration: none;
+    margin-top: -10px;
+}
+
+.footer {
+    margin-top: 50px;
+}
+
+footer {
+    background: #1ec6b6;
+    color: #fff;
+    padding: 3rem 0 2rem 0;
+    text-align: center;
+    margin-top: 0;
+}
+
+.footer-menu {
+    margin-bottom: 1rem;
+}
+
+.footer-menu a {
+    color: #fff;
+    margin: 0 18px;
+    text-decoration: none;
+    font-size: 1rem;
+    font-weight: 500;
+    letter-spacing: 1px;
+    transition: color 0.2s;
+}
+
+.footer-menu a:hover {
+    color: #ffeb3b;
+}
+
+.footer-content p {
+    text-align: center;
+    margin: 0;
+    font-size: 1rem;
+    letter-spacing: 1px;
+}
