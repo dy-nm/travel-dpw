@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WBL Gallery | Page</title>
+    <link rel="stylesheet" href="gallery.css">
+</head>
+<body>
+    <div class="navbar">
+        <a href="../../../home_page/index.html">HOME</a>
+        <a href="../../../team_page/team.html">DESTINASI</a>
+        <a href="../../../team_page/team.html">TEAM</a>
+        <a href="../../../contact_page/contact.html">CONTACT</a>
+        <a href="../../../faq_page/faq.html">FAQ</a>
+    </div>
+
+    <div class="header">
+        <h1>Gallery</h1>
+    </div>
+
+    <div class="gallery-container">
+        <div class="gallery-row">
+            <div class="gallery-item" onclick="openModal('../../../assest/wisata-wbl/wbl2.png', 'Wisata Bahari Lamongan', 'Wisata Bahari Lamongan adalah destinasi wisata terkenal dengan banyak wahana permainan.')">
+                <img src="../../../assest/wisata-wbl/wbl2.png" alt="Destinasi 1">
+            </div>
+            <div class="gallery-item" onclick="openModal('../../../assest/wisata-wbl/wbl7.jpg', 'Wisata Bahari Lamongan 2', 'Spot foto yang instagramable di kawasan wisata.')">
+                <img src="../../../assest/wisata-wbl/wbl7.jpg" alt="Destinasi 2">
+            </div>
+            <div class="gallery-item" onclick="openModal('../../../assest/wisata-wbl/wbl3.png', 'Wisata Bahari Lamongan 3', 'Terdapat kolam renang yang menarik untuk anak dan orang dewasa.')">
+                <img src="../../../assest/wisata-wbl/wbl3.png" alt="Destinasi 3">
+            </div>
+        </div>
+
+        <div class="gallery-row">
+            <div class="gallery-item" onclick="openModal('../../../assest/wisata-wbl/wbl4.jpeg', 'Wisata Bahari Lamongan 4', 'Wisata modern dengan nuansa yang futuristik.')">
+                <img src="../../../assest/wisata-wbl/wbl4.jpeg" alt="Destinasi 4">
+            </div>
+            <div class="gallery-item" onclick="openModal('../../../assest/wisata-wbl/wbl5.jpg', 'Wisata Bahari Lamongan 5', 'Destinasi wisata yang cocok untuk keluarga')">
+                <img src="../../../assest/wisata-wbl/wbl5.jpg" alt="Destinasi 5">
+            </div>
+            <div class="gallery-item" onclick="openModal('../../../assest/wisata-wbl/wbl6.jpg', 'Wisata Bahari Lamongan 6', 'Area tepi pantai diubah menjadi destinasi wisata menarik.')">
+                <img src="../../../assest/wisata-wbl/wbl6.jpg" alt="Destinasi 6">
+            </div>
+        </div>
+    </div>
+
+    <!-- The Modal -->
+    <div id="myModal" class="modal">
+        <span class="close" onclick="closeModal()">&times;</span>
+        <div class="modal-content">
+            <img id="modalImage" src="" alt="">
+            <div class="modal-description">
+                <h2 id="modalTitle"></h2>
+                <p id="modalDesc"></p>
+            </div>
+        </div>
+    </div>
+
+    <div class="kembali">
+        <a href="../menu/menu.html">
+            <button class="btn2">
+                KEMBALI
+            </button>
+        </a>
+    </div>
+
+    <div class="footer">
+        <footer>
+            <div class="footer-menu">
+                <a href="#">ABOUT</a>
+                <a href="#">CONTACT</a>
+                <a href="#">PRIVACY POLICY</a>
+                <a href="#">TERM OF USE</a>
+            </div>
+            <hr>
+            <div class="footer-content">
+                <p>&copy; Travel. All rights reserved</p>
+            </div>
+        </footer>
+    </div>
+
+    <script src="gallery.js"></script>
+</body>
+</html>
