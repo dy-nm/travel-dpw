@@ -1,4 +1,3 @@
-/* Umum */
 body {
     font-family: 'Segoe UI', Arial, sans-serif;
     line-height: 1.6;
@@ -160,6 +159,7 @@ button#calculate-btn:hover {
     background-color: #16a085;
 }
 
+
 /* Responsive untuk layar kecil */
 @media screen and (max-width: 768px) {
     .form-row {
@@ -168,4 +168,38 @@ button#calculate-btn:hover {
     .form-group {
         flex: 1 1 100%;
     }
+}
+
+footer {
+    background: #1ec6b6;
+    color: #fff;
+    padding: 3rem 0 2rem 0;
+    text-align: center;
+    margin-top: 40px;
+}
+
+
+.footer-menu {
+    margin-bottom: 1rem;
+}
+
+.footer-menu a {
+    color: #fff;
+    margin: 0 18px;
+    text-decoration: none;
+    font-size: 1rem;
+    font-weight: 500;
+    letter-spacing: 1px;
+    transition: color 0.2s;
+}
+
+.footer-menu a:hover {
+    color: #ffeb3b;
+}
+
+.footer-content p {
+    text-align: center;
+    margin: 0;
+    font-size: 1rem;
+    letter-spacing: 1px;
 }
