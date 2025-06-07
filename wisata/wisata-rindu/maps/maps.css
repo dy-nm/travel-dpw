@@ -64,15 +64,11 @@ body{
 }
 
 .footer {
-    margin-top: 50px;
-}
-
-footer {
-    background-color: #007d7d;
+    background: #1ec6b6;
     color: #fff;
     padding: 3rem 0 2rem 0;
     text-align: center;
-    margin-top: 0;
+    margin-top: 30px;
 }
 
 .footer-menu {
