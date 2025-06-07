@@ -3,46 +3,79 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Travel Gallery</title>
+    <title>Rindu Gallery | Page</title>
     <link rel="stylesheet" href="galery.css">
 </head>
 <body>
-    <nav>
-        <a href="#">HOME</a>
-        <a href="#">DESTINASI</a>
-        <a href="#">CONTACT</a>
-        <a href="#">TEAM</a>
-        <a href="#">FAQ</a>
-    </nav>
-
+        <div class="navbar">
+            <a href="../../../home_page/index.html">HOME</a>
+            <a href="../../../destinasi_page/destinasi.html">DESTINASI</a>
+            <a href="../../../team_page/team.html">TEAM</a>
+            <a href="../../../faq_page/faq.html">FAQ</a>
+        </div>
     <div class="header">
-        <h1>GALERY</h1>
+        <h1>GALERY PANTAI-RINDU</h1>
     </div>
 
     <div class="gallery-container">
         <div class="gallery-row">
-            <div class="gallery-item" data-name="Destinasi 1">
+            <div class="gallery-item" onclick="openModal('../../../assest/wisata-rindu/rindu.jpg', 'Wisata Pantai Rindu 1', 'Wisata pantai Rindu adalah Meskipun bernama pantai namun tempat ini bukanlah pantai. Melainkan sebuah cafe semi outdoor yang terletak di tepi laut selat Madura. Salah satu cafe wisata yang ada di Kabupaten Bangkalan dengan pemandangan laut dan Jembatan Suramadu.')">
                 <img src="../../../assest/wisata-rindu/rindu.jpg" alt="Destinasi 1">
             </div>
-            <div class="gallery-item" data-name="Destinasi 2">
-                <img src="../../../assest/wisata-rindu/rindu.jpg" alt="Destinasi 2">
+            <div class="gallery-item" onclick="openModal('../../../assest/wisata-rindu/rindu5.jpg', 'Wisata Pantai Rindu 2', 'Berjamurnya kafe di Bangkalan menjadikan tempat ini sebagai salah satu rekomendasi kafe dengan suasana yang berbeda.')">
+                <img src="../../../assest/wisata-rindu/rindu5.jpg" alt="Destinasi 2">
             </div>
-            <div class="gallery-item" data-name="Destinasi 3">
-                <img src="../../../assest/wisata-rindu/rindu.jpg" alt="Destinasi 3">
+            <div class="gallery-item" onclick="openModal('../../../assest/wisata-rindu/rindu2.jpg', 'Wisata Pantai Rindu 3', 'Biasanya bangunan kafe terletak di darat dan tepat di tengah kota. Berbeda dengan Pantai Rindu yang dibangun diatas tepi laut menggunakan kayu jati yang kuat. Desainnya sendiri mirip-mirip dengan Dermaga Rindu.')">
+                <img src="../../../assest/wisata-rindu/rindu2.jpg" alt="Destinasi 3">
             </div>
         </div>
+
         <div class="gallery-row">
-            <div class="gallery-item" data-name="Destinasi 4">
-                <img src="../../../assest/wisata-rindu/rindu.jpg" alt="Destinasi 4">
+            <div class="gallery-item" onclick="openModal('../../../assest/wisata-rindu/rindu3.jpg', 'Wisata Pantai Rindu 4', 'Tempat ini mulanya bernama Wisata Alam Kesek. Namun oleh pemiliknya diubah nama menjadi Pantai Rindu.')">
+                <img src="../../../assest/wisata-rindu/rindu3.jpg" alt="Destinasi 4">
             </div>
-            <div class="gallery-item" data-name="Destinasi 5">
-                <img src="../../../assest/wisata-rindu/rindu.jpg" alt="Destinasi 5">
+            <div class="gallery-item" onclick="openModal('../../../assest/wisata-rindu/rindu5.jpg', 'Wisata Pantai Rindu 5', 'WLetak Pantai Rindu masih sederet dengan Dermaga Rindu.')">
+                <img src="../../../assest/wisata-rindu/rindu5.jpg" alt="Destinasi 5">
             </div>
-            <div class="gallery-item" data-name="Destinasi 6">
-                <img src="../../../assest/wisata-rindu/rindu.jpg" alt="Destinasi 6">
+            <div class="gallery-item" onclick="openModal('../../../assest/wisata-rindu/rindu6.jpg', 'Wisata Pantai Rindu 6', 'Tempat wisata ini bisa kamu pilih sebagai tempat nongkrong.')">
+                <img src="../../../assest/wisata-rindu/rindu6.jpg" alt="Destinasi 6">
             </div>
         </div>
     </div>
-    <a href="../menu/menu.html"><button class="back-button">KEMBALI</button></a>
+
+    <div id="myModal" class="modal">
+        <span class="close" onclick="closeModal()">&times;</span>
+        <div class="modal-content">
+            <img id="modalImage" src="" alt="">
+            <div class="modal-description">
+                <h2 id="modalTitle"></h2>
+                <p id="modalDesc"></p>
+            </div>
+        </div>
+    </div>
+
+    <div class="kembali">
+        <a href="../menu/menu.html">
+            <button class="btn2">
+                KEMBALI
+            </button>
+        </a>
+    </div>
+
+    <div class="footer">
+        <footer>
+            <div class="footer-menu">
+                <a href="#">ABOUT</a>
+                <a href="#">CONTACT</a>
+                <a href="#">PRIVACY POLICY</a>
+                <a href="#">TERM OF USE</a>
+            </div>
+            <hr>
+            <div class="footer-content">
+                <p>&copy; Travel. All rights reserved</p>
+            </div>
+        </footer>
+    </div>
+    <script src="galery.js"></script>
 </body>
 </html>
