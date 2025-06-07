@@ -15,24 +15,23 @@ header {
     text-align: center;
 }
 
-nav ul {
-    list-style: none;
-    padding: 0;
-    display: flex;
-    justify-content: center;
-    gap: 20px;
-    margin: 0;
-    color: black;
+.navbar {
+    text-align: center;
+    padding: 10px 0;
+    margin-bottom: 30px;
 }
 
-nav a {
+.navbar a{
+    display: inline-block;
+    color: black;
+    font-weight: 400;
     text-decoration: none;
-    color: black;
-    font-weight: bold;
+    padding: 10px 10px;
+    margin: 0 5px;
 }
 
-nav a:hover {
-    color: #1ec6b6;
+.navbar a:hover {
+    color:#1ec6b6
 }
 
 main {
@@ -127,15 +126,34 @@ main {
 }
 
 footer {
+    background: #1ec6b6;
+    color: #fff;
+    padding: 3rem 0 2rem 0;
     text-align: center;
-    padding: 20px;
-    font-size: 14px;
-    background-color: #007d7d;
-    color: white;
+    margin-top: 0;
 }
 
-.footer-links a {
-    color: white;
-    margin: 0 10px;
+.footer-menu {
+    margin-bottom: 1rem;
+}
+
+.footer-menu a {
+    color: #fff;
+    margin: 0 18px;
     text-decoration: none;
+    font-size: 1rem;
+    font-weight: 500;
+    letter-spacing: 1px;
+    transition: color 0.2s;
+}
+
+.footer-menu a:hover {
+    color: #ffeb3b;
+}
+
+.footer-content p {
+    text-align: center;
+    margin: 0;
+    font-size: 1rem;
+    letter-spacing: 1px;
 }
