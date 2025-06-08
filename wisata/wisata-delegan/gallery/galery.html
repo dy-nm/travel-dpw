@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Delegan | Galery</title>
+    <link rel="stylesheet" href="galery.css">
+</head>
+<body>
+    <div class="navbar">
+        <a href="../../../home_page/index.html">HOME</a>
+        <a href="../../../destinasi_page/destinasi.html">DESTINASI</a>
+        <a href="../../../team_page/team.html">TEAM</a>
+        <a href="../../../faq_page/faq.html">FAQ</a>
+    </div>
+    <div class="header">
+        <h1>Galery</h1>
+    </div>
+
+    <div class="gallery-container">
+        <div class="gallery-row">
+            <div class="gallery-item" onclick="openModal('../deskripsi/gambar1.jpg', 'Wisata Pantai Delegan', 'Pantai Delegan dikenal dengan pasir putihnya yang lembut dan air laut yang relatif tenang, menjadikannya tempat yang cocok untuk rekreasi keluarga maupun wisata santai. Ombaknya yang bersahabat memungkinkan pengunjung untuk berenang atau bermain air dengan aman, terutama anak-anak.')">
+                <img src="../deskripsi/gambar1.jpg" alt="Destinasi 1">
+            </div>
+            <div class="gallery-item" onclick="openModal('../deskripsi/background.jpg', 'Wisata Pantai Delegan 2', 'Nikmatnya udara sore hari sambil melihat terbenamnya matahari')">
+                <img src="../deskripsi/background.jpg" alt="Destinasi 2">
+            </div>
+            <div class="gallery-item" onclick="openModal('../deskripsi/background2.jpg', 'Wisata Pantai Delegan 3', 'Keindahan ombak di sore hari')">
+                <img src="../deskripsi/background2.jpg" alt="Destinasi 3">
+            </div>
+        </div>
+
+        <div class="gallery-row">
+            <div class="gallery-item" onclick="openModal('destinasi6.jpg', 'Wisata Pantai Delegan 4', 'Keindahan pasir putih yang lembut.')">
+                <img src="destinasi6.jpg" alt="Destinasi 4">
+            </div>
+            <div class="gallery-item" onclick="openModal('../menu/fontage.jpeg', 'Wisata Pantai Delegan 5', 'Biru nya air laut yang tenang dan indah')">
+                <img src="../menu/fontage.jpeg" alt="Destinasi 5">
+            </div>
+            <div class="gallery-item" onclick="openModal('foto1.jpg', 'Wisata Pantai Delegan 6', 'Pantai yang indah untuk dinikmati bersama keluarga')">
+                <img src="foto1.jpg" alt="Destinasi 6">
+            </div>
+        </div>
+    </div>
+
+    <!-- The Modal -->
+    <div id="myModal" class="modal">
+        <span class="close" onclick="closeModal()">&times;</span>
+        <div class="modal-content">
+            <img id="modalImage" src="" alt="">
+            <div class="modal-description">
+                <h2 id="modalTitle"></h2>
+                <p id="modalDesc"></p>
+            </div>
+        </div>
+    </div>
+
+    <div class="kembali">
+        <a href="../menu/menu.html">
+            <button class="btn2">
+                KEMBALI
+            </button>
+        </a>
+    </div>
+
+    <div class="footer">
+        <footer>
+            <div class="footer-menu">
+                <a href="#">ABOUT</a>
+                <a href="#">CONTACT</a>
+                <a href="#">PRIVACY POLICY</a>
+                <a href="#">TERM OF USE</a>
+            </div>
+            <hr>
+            <div class="footer-content">
+                <p>&copy; Travel. All rights reserved</p>
+            </div>
+        </footer>
+    </div>
+
+    <script src="galery.js"></script>
+</body>
+</html>
