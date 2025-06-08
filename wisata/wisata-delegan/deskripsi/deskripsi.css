@@ -1,0 +1,148 @@
+
+body{
+    font-family: 'Segoe UI', Arial, sans-serif;
+    margin: 0;
+}
+
+.navbar {
+    text-align: center;
+    padding: 10px 0;
+    margin-bottom: 50px;
+}
+
+.navbar a{
+    display: inline-block;
+    color: black;
+    font-weight: 400;
+    text-decoration: none;
+    padding: 10px 10px;
+    margin: 0 5px;
+}
+
+.navbar a:hover {
+    color:#1ec6b6
+}
+
+.section1 {
+    margin: 0;
+    height: 105vh;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-image: url(../../../assest/wisata-delegan/background.jpg);
+}
+
+.section2 {
+    margin-top: -20px;
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-image: url(../../../assest/wisata-delegan/background2.jpg);
+}
+
+.content1 {
+    color: white;
+    margin-top: 150px;
+    margin-left: 100px;
+    width: 700px;
+}
+
+.content1 h1 {
+    font-size: 50px;
+}
+
+.content1 p {
+    margin-top: -40px;
+}
+
+.btn1 {
+    background-color: turquoise;
+    color: white;
+    padding: 10px 20px;
+    margin-top: 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    text-decoration: none;
+    margin-top: -10px;
+}
+
+.btn2 {
+    background-color: turquoise;
+    color: white;
+    padding: 10px 20px;
+    margin-top: 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    text-decoration: none;
+    margin-top: -10px;
+}
+
+.kembali {
+    text-align: center;
+}
+
+.content2 {
+    padding: 50px 50px 0px 50px;
+    display: flex;
+}
+
+.about {
+    color: white;
+    width: 500px;
+}
+
+.about h1 {
+    font-size: 50px;
+}
+
+.about p {
+    margin-top: -40px;
+
+}
+
+.img {
+    margin-top: 50px;
+    margin-left: 110px;
+}
+
+.img img {
+    border-radius: 30px;
+    border: 5px solid white;
+    width : 500px;
+}
+
+footer {
+    background: #1ec6b6;
+    color: #fff;
+    padding: 3rem 0 2rem 0;
+    text-align: center;
+    margin-top: 0;
+}
+
+.footer-menu {
+    margin-bottom: 1rem;
+}
+
+.footer-menu a {
+    color: #fff;
+    margin: 0 18px;
+    text-decoration: none;
+    font-size: 1rem;
+    font-weight: 500;
+    letter-spacing: 1px;
+    transition: color 0.2s;
+}
+
+.footer-menu a:hover {
+    color: #ffeb3b;
+}
+
+.footer-content p {
+    text-align: center;
+    margin: 0;
+    font-size: 1rem;
+    letter-spacing: 1px;
+}
