@@ -1,0 +1,142 @@
+body {
+    font-family: 'Segoe UI', Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 20px;
+    background-color: #008b8b;
+    color: black;
+}
+
+.navbar {
+    text-align: center;
+    padding: 10px 0;
+    margin-bottom: 50px;
+    margin-top: -23px;
+}
+
+.navbar a{
+    display: inline-block;
+    color: black;
+    font-weight: 400;
+    text-decoration: none;
+    padding: 10px 10px;
+    margin: 0 5px;
+}
+
+.navbar a:hover {
+    color:#1ec6b6
+}
+
+.container {
+    max-width: 600px;
+    margin: 0 auto;
+    background: white;
+    padding: 25px;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    text-align: center;
+    color: #2c3e50;
+    margin-bottom: 30px;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: 600;
+}
+
+input, select {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+button {
+    background-color: turquoise;
+    border: none;
+    padding: 12px 20px;
+    width: 100%;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #2980b9;
+}
+
+.result {
+    margin-top: 30px;
+    padding: 20px;
+    background-color: #e8f4fc;
+    border-radius: 5px;
+    display: none;
+}
+
+.result h2 {
+    margin-top: 0;
+    color: #2c3e50;
+}
+
+.cost-item {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #d1e0ee;
+}
+
+.total {
+    font-weight: bold;
+    font-size: 18px;
+    color: #e74c3c;
+}
+
+.kembali {
+    text-align: center;
+    margin-top: 50px;
+}
+
+.btn2 {
+    background-color: turquoise;
+    color: white;
+    padding: 10px 20px;
+    margin-top: 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    text-decoration: none;
+    margin-top: -10px;
+    width: 120px;
+}
+
+/* Paket Trip Styling */
+.paket-trip-group {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    margin-top: 8px;
+}
+
+.paket-trip-option {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-weight: 500;
+}
+
+.paket-trip-option input[type="radio"] {
+    transform: scale(1.2);
+    accent-color: turquoise; /* Untuk warna radio button */
+}
+

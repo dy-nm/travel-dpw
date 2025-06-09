@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jaddih Estimasi Biaya | Page</title>
+    <link rel="stylesheet" href="biaya.css">
+</head>
+<body>
+    <div class="navbar">
+        <a href="../../../home_page/index.html">HOME</a>
+        <a href="../../../destinasi_page/destinasi.html">DESTINASI</a>
+        <a href="../../../team_page/team.html">TEAM</a>
+        <a href="../../../faq_page/faq.html">FAQ</a>
+    </div>
+
+    <div class="container">
+        <h1>Estimasi Biaya Liburan</h1>
+        
+        <div class="form-group">
+            <label for="people">Jumlah Orang:</label>
+            <input type="number" id="people" min="1" value="">
+        </div>
+        
+        <div class="form-group">
+            <label for="days">Jumlah Hari Liburan:</label>
+            <input type="number" id="days" min="1" value="">
+        </div>
+        
+        <div class="form-group">
+            <label for="transport">Kendaraan:</label>
+            <select id="transport">
+                <option value="">Pilih Kendaraan</option>
+                <option value="motor">Motor</option>
+                <option value="mobil">Mobil</option>
+                <option value="angkutan">Tanpa Kendaraan</option>
+            </select>
+        </div>
+        
+        <div class="form-group">
+            <label>Paket Trip:</label>
+            <div class="paket-trip-group">
+                <label class="paket-trip-option">
+                    <input type="radio" id="paket-ya" name="paket" value="ya">
+                    Iya
+                </label>
+                <label class="paket-trip-option">
+                    <input type="radio" id="paket-tidak" name="paket" value="tidak">
+                    Tidak
+                </label>
+            </div>
+        </div>
+        
+        <button id="calculate-btn">Hitung Estimasi Biaya</button>
+        
+        <div id="result" class="result">
+            <h2>Rincian Biaya</h2>
+            <div id="cost-details"></div>
+            <div class="cost-item total">
+                <span>Total Estimasi Biaya Liburan:</span>
+                <span id="total-cost">Rp 0</span>
+            </div>
+        </div>
+    </div>
+
+    <div class="kembali">
+        <a href="..">
+            <button class="btn2">
+                KEMBALI
+            </button>
+        </a>
+    </div>
+
+    <script src="biaya.js"></script>
+</body>
+</html>
