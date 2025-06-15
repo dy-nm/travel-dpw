@@ -47,8 +47,9 @@ body {
 }
 
 .content1 {
+    font-weight: 600;
     color: whitesmoke;
-    margin-top: 150px;
+    margin-top: 400px;
     margin-left: 400px;
     width: 650px;
 }
@@ -99,6 +100,7 @@ body {
 .about {
     color: white;
     width: 650px;
+     margin-top: 150px;
 }
 
 .about h1 {
@@ -106,7 +108,7 @@ body {
 }
 
 .about p {
-    margin-top: 16px;
+    font-weight: 490;
 }
 
 .img {
