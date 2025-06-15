@@ -3,60 +3,83 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>GILI LABAK Gallery</title>
+    <title>GILI LABAK Gallery | Page</title>
     <link rel="stylesheet" href="galery.css">
 </head>
 <body>
-    <nav class="navbar">
-        <div class="navbar-logo">
-        </div>
-        <ul class="navbar-menu">
-            <li><a href="../../../home_page/index.html">HOME</a></li>
-            <li><a href="../../../destinasi_page/destinasi.html">DESTINASI</a></li>
-            <li><a href="../../../team_page/team.html">TEAM</a></li>
-            <li><a href="../../../faq_page/faq.html">FAQ</a></li>
-        </ul>
-    </nav>
+    <div class="navbar">
+        <a href="../../../home_page/index.html">HOME</a>
+        <a href="../../../team_page/team.html">DESTINASI</a>
+        <a href="../../../team_page/team.html">TEAM</a>
+        <a href="../../../contact_page/contact.html">CONTACT</a>
+        <a href="../../../faq_page/faq.html">FAQ</a>
+    </div>
+
     <div class="header">
-        <h1>GALERY</h1>
+        <h1>Gallery</h1>
     </div>
 
     <div class="gallery-container">
         <div class="gallery-row">
-            <div class="gallery-item" data-name="Review 1">
-                <img src="../../../assest/wisata-giliLabak/gambar-1.jpg" alt="Review 1">
+            <div class="gallery-item" onclick="openModal('../gambar/gambar-2.webp', 'Wisata Gili Labak', 'Wisata Gili Labak adalah pulau yang menyimpan keindahan pantai dan laut yang biru, cocok untuk pelarian dari hiruk pikuk kota.')">
+                <img src="../../../assest/wisata-giliLabak/gambar-2.webp"Destinasi 1">
             </div>
-            <div class="gallery-item" data-name="Review 2">
-                <img src="../../../assest/wisata-giliLabak/gambar-6.jpg" alt="Review 2">
+            <div class="gallery-item" onclick="openModal('../gambar/gambar-1.jpg', 'Spot Snorkeling Gili Labak', 'Menikmati keindahan bawah laut Gili Labak dengan snorkeling, ditemani ikan-ikan kecil dan terumbu karang yang menawan.')">
+                <img src="../../../assest/wisata-giliLabak/gambar-1.jpg" alt="Destinasi 2">
             </div>
-            <div class="gallery-item" data-name="Review 3">
-                <img src="../../../assest/wisata-giliLabak/gambar-2.webp" alt="Review 3">
+            <div class="gallery-item" onclick="openModal('../gambar/gambar-3.jpg', 'Tepi Pantai Gili Labak', 'Pasir putih, laut biru jernih, dan deretan pohon kelapa menjadi pemandangan tropis yang menenangkan di Gili Labak')">
+                <img src="../../../assest/wisata-giliLabak/gambar-3.jpg" alt="Destinasi 3">
             </div>
         </div>
+
         <div class="gallery-row">
-            <div class="gallery-item" data-name="Review 4">
-                <img src="../../../assest/wisata-giliLabak/gambar-3.jpg" alt="Review 4">
+            <div class="gallery-item" onclick="openModal('../gambar/gambar-4.jpg', 'Wisata Gili Labak', 'Bersantai di pinggir pantai Gili Labak sambil menikmati angin sepoi-sepoi dan suara ombak yang menenangkan.')">
+                <img src="../../../assest/wisata-giliLabak/gambar-4.jpg" alt="Destinasi 4">
             </div>
-            <div class="gallery-item" data-name="Review 5">
-                <img src="../../../assest/wisata-giliLabak/gambar-4.jpg" alt="Review 5">
+            <div class="gallery-item" onclick="openModal('../gambar/gambar-5.jpg', 'Wisata Gili Labak', 'Suasana dermaga kecil di Gili Labak, tempat para pengunjung datang dan pergi menikmati keindahan pulau.')">
+                <img src="../../../assest/wisata-giliLabak/gambar-5.jpg" alt="Destinasi 5">
             </div>
-            <div class="gallery-item" data-name="Review 6">
-                <img src="../../../assest/wisata-giliLabak/gambar-5.jpg" alt="Review 6">
+            <div class="gallery-item" onclick="openModal('../gambar/gambar-6.jpg', 'Wisata Gili Labak', 'Spot ikonik Pulau Gili Labak yang menjadi favorit wisatawan untuk berfoto sebagai kenang-kenangan liburan.')">
+                <img src="../../../assest/wisata-giliLabak/gambar-6.jpg" alt="Destinasi 6">
             </div>
         </div>
     </div>
 
-    <a href="../menu/menu.html"><button class="back-button">KEMBALI</button></a>
-
-    <footer>
-        <div class="footer-links">
-            <a href="#">ABOUT</a>
-            <a href="#">PRIVACY POLICY</a>
-            <a href="#">TERM OF USE</a>
+    <!-- The Modal -->
+    <div id="myModal" class="modal">
+        <span class="close" onclick="closeModal()">&times;</span>
+        <div class="modal-content">
+            <img id="modalImage" src="" alt="">
+            <div class="modal-description">
+                <h2 id="modalTitle"></h2>
+                <p id="modalDesc"></p>
+            </div>
         </div>
-        <br>
-        <hr>
-        <div class="copyright">Travel. All rights reserved</div>
-    </footer>
+    </div>
+
+    <div class="kembali">
+        <a href="../menu/menu/wisata.html">
+            <button class="btn2">
+                KEMBALI
+            </button>
+        </a>
+    </div>
+
+    <div class="footer">
+        <footer>
+            <div class="footer-menu">
+                <a href="#">ABOUT</a>
+                <a href="#">CONTACT</a>
+                <a href="#">PRIVACY POLICY</a>
+                <a href="#">TERM OF USE</a>
+            </div>
+            <hr>
+            <div class="footer-content">
+                <p>&copy; Travel. All rights reserved</p>
+            </div>
+        </footer>
+    </div>
+
+    <script src="script.js"></script>
 </body>
 </html>
